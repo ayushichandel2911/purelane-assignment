@@ -1,0 +1,199 @@
+<section class="purelane-how" id="how-{{ section.id }}">
+  <div class="purelane-how__container">
+
+    <div class="purelane-how__grid">
+
+      <!-- Less scrubbing -->
+      <article class="purelane-how__card">
+        <div class="purelane-how__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="8.5" r="3.2"></circle>
+            <circle cx="16.4" cy="6.6" r="2.2"></circle>
+            <circle cx="15" cy="13" r="2.8"></circle>
+            <circle cx="8.6" cy="15.6" r="2.1"></circle>
+            <path d="M4 21h16"></path>
+          </svg>
+        </div>
+
+        <h3>Less scrubbing</h3>
+
+        <p>
+          A foaming formulation. The foam clings to grease and lifts it,
+          so you wipe instead of scrub.
+        </p>
+
+        <a href="#shop" class="purelane-how__link">
+          Learn more
+          <span aria-hidden="true">→</span>
+        </a>
+      </article>
+
+
+      <!-- Clean ingredients -->
+      <article class="purelane-how__card">
+        <div class="purelane-how__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3 4.5 6v6.2c0 4.3 3.1 7.6 7.5 8.8
+              4.4-1.2 7.5-4.5 7.5-8.8V6L12 3Z"></path>
+            <path d="m9 12 2.2 2.2L15.4 10"></path>
+          </svg>
+        </div>
+
+        <h3>Clean ingredients</h3>
+
+        <p>
+          No sulphates, no chlorine, no synthetic fragrance.
+          Nothing on the label you would not want near your food.
+        </p>
+
+        <a href="#ingredients" class="purelane-how__link">
+          Learn more
+          <span aria-hidden="true">→</span>
+        </a>
+      </article>
+
+
+      <!-- Safe around everyone -->
+      <article class="purelane-how__card">
+        <div class="purelane-how__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20s-7-4.4-7-9.4A4.1 4.1 0 0 1 12 8
+              a4.1 4.1 0 0 1 7 2.6c0 5-7 9.4-7 9.4Z"></path>
+          </svg>
+        </div>
+
+        <h3>Safe around everyone</h3>
+
+        <p>
+          Gentle on hands, safe around kids and pets, and it leaves
+          no toxic residue on the surfaces you touch every day.
+        </p>
+
+        <a href="#proof" class="purelane-how__link">
+          Learn more
+          <span aria-hidden="true">→</span>
+        </a>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+  .purelane-how {
+    width: 100%;
+    padding: 90px 20px;
+    background: #17102b;
+  }
+
+  .purelane-how__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .purelane-how__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .purelane-how__card {
+    padding: 32px 28px;
+    border-radius: 26px;
+    border: 1px solid rgba(236,230,247,.22);
+    background: linear-gradient(158deg, rgba(236,230,247,.10), rgba(75,58,143,.20));
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .purelane-how__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(18,12,34,.35);
+  }
+
+  .purelane-how__icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #f0a03c;
+  }
+
+  .purelane-how__icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .purelane-how__card h3 {
+    margin: 0 0 12px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #faf7fd;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .purelane-how__card p {
+    margin: 0 0 20px;
+    color: rgba(236,230,247,.74);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .purelane-how__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #f0a03c;
+  }
+
+  .purelane-how__link span {
+    transition: transform 0.2s ease;
+  }
+
+  .purelane-how__link:hover span {
+    transform: translateX(4px);
+  }
+
+  @media screen and (max-width: 749px) {
+    .purelane-how {
+      padding: 50px 16px;
+    }
+
+    .purelane-how__grid {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .purelane-how__card {
+      padding: 26px 22px;
+    }
+  }
+</style>
+
+
+{% schema %}
+{
+  "name": "Purelane How It Works",
+  "tag": "section",
+  "class": "section-purelane-how",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Purelane How It Works"
+    }
+  ]
+}
+{% endschema %}

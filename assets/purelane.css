@@ -1,0 +1,111 @@
+:root {
+  --purelane-ink: #17102b;
+  --purelane-purple: #241a3d;
+  --purelane-brand: #4b3a8f;
+  --purelane-light-purple: #6b55b8;
+  --purelane-paper: #ece6f7;
+  --purelane-orange: #f0a03c;
+  --purelane-surface: #faf7fd;
+}
+
+body {
+  background: var(--purelane-surface);
+  color: var(--purelane-ink);
+}
+
+.purelane-section {
+  background: var(--purelane-surface);
+}
+
+.purelane-section h1,
+.purelane-section h2,
+.purelane-section h3 {
+  color: var(--purelane-ink);
+  letter-spacing: -0.02em;
+}
+
+.purelane-section .button,
+.purelane-section button {
+  border-radius: 999px;
+}
+
+.purelane-card {
+  border-radius: 24px;
+  border: 1px solid rgba(75, 58, 143, 0.12);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 12px 35px rgba(36, 26, 61, 0.08);
+}
+/* ===== GLOBAL HEADER/FOOTER OVERRIDE ===== */
+.shopify-section-header,
+.header-wrapper,
+header.header {
+  background: #17102b !important;
+}
+
+.header__heading-link,
+.header__heading-link .h2,
+.header a,
+.header__icon,
+.header__icon svg,
+.header-search__icon,
+predictive-search a,
+.header__menu-item {
+  color: #ece6f7 !important;
+  fill: #ece6f7 !important;
+}
+
+
+/* ===== FEATURED COLLECTION / PRODUCT CARDS ===== */
+.section-{{ '' }}collection,
+#collection- {
+  background: #17102b !important;
+}
+
+.collection {
+  background: #17102b;
+  padding: 90px 0;
+}
+
+.collection__title .title {
+  color: #faf7fd !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+}
+
+.card-wrapper .card,
+.card-wrapper .card__inner {
+  background: linear-gradient(158deg, rgba(236,230,247,.10), rgba(75,58,143,.20)) !important;
+  border: 1px solid rgba(236,230,247,.22) !important;
+  border-radius: 22px !important;
+  overflow: hidden;
+}
+
+.card__content,
+.card__information {
+  background: transparent !important;
+}
+
+.card__heading,
+.card__heading a {
+  color: #faf7fd !important;
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.price-item,
+.price-item--regular,
+.price-item--sale {
+  color: #f0a03c !important;
+  font-weight: 700 !important;
+}
+
+.card__badge {
+  background: #f0a03c !important;
+  color: #08211a !important;
+  border: none !important;
+}
+.card__media,
+.media {
+  background: linear-gradient(158deg, rgba(236,230,247,.15), rgba(75,58,143,.25)) !important;
+}

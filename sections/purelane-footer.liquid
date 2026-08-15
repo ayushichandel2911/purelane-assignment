@@ -1,0 +1,153 @@
+<footer class="purelane-footer">
+  <div class="purelane-footer__container">
+
+    <div class="purelane-footer__grid">
+
+      <!-- Brand -->
+      <div class="purelane-footer__column purelane-footer__brand">
+        <a href="/" class="purelane-footer__logo">
+          PURELANE
+        </a>
+
+        <p>
+          Plant-powered cleaning for a healthier home.
+        </p>
+
+        <small>
+          Purelane Eco Products Pvt Ltd
+        </small>
+      </div>
+
+
+      <!-- Shop -->
+      <div class="purelane-footer__column">
+        <h5>Shop</h5>
+
+        <a href="/">Home</a>
+        <a href="/collections/all">Skin</a>
+        <a href="/collections/all">Starter kits</a>
+      </div>
+
+
+      <!-- About -->
+      <div class="purelane-footer__column">
+        <h5>About</h5>
+
+        <a href="#how">How it works</a>
+        <a href="#ingredients">Sustainability</a>
+        <a href="#proof">FAQs</a>
+        <a href="#reviews">Reviews</a>
+      </div>
+
+
+      <!-- Help -->
+      <div class="purelane-footer__column">
+        <h5>Help</h5>
+
+        <a href="/pages/contact">Contact</a>
+        <a href="/policies/privacy-policy">Privacy</a>
+        <a href="/policies/terms-of-service">Terms</a>
+        <a href="/policies/refund-policy">Refunds</a>
+      </div>
+
+    </div>
+
+
+    <div class="purelane-footer__bottom">
+      <span>
+        © 2026 Purelane Eco Products Private Limited
+      </span>
+
+      <span>
+        Privacy · Terms · Refunds · Contact
+      </span>
+    </div>
+
+  </div>
+</footer>
+
+
+<style>
+  .purelane-footer {
+    width: 100%;
+    padding: 55px 20px 30px;
+    background: #17102b;
+    border-top: 1px solid rgba(236,230,247,.15);
+  }
+
+  .purelane-footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .purelane-footer__grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 45px;
+  }
+
+  .purelane-footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .purelane-footer__logo {
+    margin-bottom: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-decoration: none;
+    color: #f0a03c;
+  }
+
+  .purelane-footer__brand p {
+    max-width: 260px;
+    margin: 0 0 12px;
+    color: rgba(236,230,247,.74);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .purelane-footer__brand small {
+    color: rgba(236,230,247,.5);
+    font-size: 11px;
+  }
+
+  .purelane-footer__column h5 {
+    margin: 0 0 15px;
+    color: #faf7fd;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+  }
+
+  .purelane-footer__column:not(.purelane-footer__brand) a {
+    margin-bottom: 9px;
+    color: rgba(236,230,247,.74);
+    font-size: 13px;
+    text-decoration: none;
+    transition: color .2s ease;
+  }
+
+  .purelane-footer__column:not(.purelane-footer__brand) a:hover {
+    color: #f0a03c;
+  }
+
+
+{% schema %}
+{
+  "name": "Purelane Footer",
+  "tag": "section",
+  "class": "section-purelane-footer",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Purelane Footer"
+    }
+  ]
+}
+{% endschema %}

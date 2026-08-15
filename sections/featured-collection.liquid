@@ -64,6 +64,19 @@
   endif
 -%}
 
+{%- if section.settings.banner_image != blank -%}
+  <div class="purelane-collection-banner">
+    {{
+      section.settings.banner_image
+      | image_url: width: 1600
+      | image_tag:
+        loading: 'lazy',
+        widths: '750, 1100, 1600',
+        alt: section.settings.banner_image.alt
+    }}
+  </div>
+{%- endif -%}
+
 <div
   class="color-{{ section.settings.color_scheme }} isolate gradient"
 >
@@ -200,7 +213,7 @@
 
     {%- if section.settings.show_view_all and more_in_collection -%}
       <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        <a
+        
           href="{{ section.settings.collection.url }}"
           class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
           aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
@@ -224,6 +237,11 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner image (optional)"
+    },
     {
       "type": "collection",
       "id": "collection",
