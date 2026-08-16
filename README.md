@@ -1,4 +1,6 @@
 # Purelane — AI Product Engineer Assignment
+demo link --> https://purelane-assignment-1jftvseh.myshopify.com/
+if prompts for password- Purelane123
 
 A Shopify storefront implementation for the Purelane homecare brand, created as part of the AI Product Engineer assignment.
 
